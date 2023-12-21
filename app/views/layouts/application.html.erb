@@ -6,11 +6,59 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application", media: 'all', "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
+ <header class="header">
+    <div class="header__container wrapper">
+      <div class="row">
+        <div class="header__items col-md-5 col-12">
+          <div class="header__logo__wrapper">
+            <img
+              class="header__logo__image"
+              src="<%= image_url('header-icon/logo.short.jpg') %>"
+              alt=""
+            />
+          </div>
+          <div class="header__logo style-a">
+            <a href="index.html" class="">Будівельний магазин</a>
+          </div>
+        </div>
+        <div class="header__navigation style-a col-md-5 col-12">
+          <div><a class="header__link" href="product.html">Товари</a></div>
+          <a class="header__link" href="services.html">Послуги</a>
+        </div>
+        <div class="header__actions col-md-2 col-12">
+          <button onclick="" class="header__button">
+            <a href="login.html">
+              <img src="<%= image_url('header-icon/header-input.png') %>" alt="" />
+            </a>
+          </button>
+          <button onclick="" class="header__button">
+            <a href="basket.html">
+              <img src="<%= image_url('header-icon/cart.png') %>" alt="" />
+            </a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
     <%= yield %>
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <img src="<%= image_url('header-icon/logo.short.jpg') %>" alt="" />
+      </div>
+      <div class="footer__title">Будівельний Магазин</div>
+      <div class="footer__items">
+        <a class="footer__contact" href="#">Contact with us</a>
+        <div class="footer__line"></div>
+        <a class="footer__info" href="#">buildMaterial@gmail.com</a>
+      </div>
+      <div class="footer__copyright">Copyright &#169; 2023</div>
+    </footer>
   </body>
 </html>

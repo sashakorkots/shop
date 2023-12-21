@@ -1,57 +1,59 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fff;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.login-color {
+  background: #f5f5dc;
 }
 
 .registration-form,
 .form-container {
-    max-width: 400px;
-    margin: 20px auto;
-    background-color: #ffffe6;
-    padding: 20px;
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: #ffffe6;
+  padding: 20px;
 }
 
 .form-group {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .form-control,
 .input {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border: 1px solid #ffcc00;
-    border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #ffcc00;
+  border-radius: 4px;
 }
 
 input[type="checkbox"] {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .btn-primary,
 .btn {
-    background-color: #28a745;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    display: block;
-    width: 100%;
-    margin-top: 10px;
-    transition: background-color 0.3s ease; /* Доданий перехід для зміни кольору */
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  transition: background-color 0.3s ease; /* Доданий перехід для зміни кольору */
 }
 
 .btn-primary:hover,
 .btn:hover {
-    background-color: #ffcc00; /* Новий колір при ховері */
+  background-color: #ffcc00; /* Новий колір при ховері */
 }
 
-
 .text-center {
-    text-align: center;
+  text-align: center;
 }

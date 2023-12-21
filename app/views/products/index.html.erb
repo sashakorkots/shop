@@ -1,0 +1,14 @@
+<div class="card">
+  <div class="wrapper container">
+    <div class="card-content">
+      <h2>Список товарів</h2>
+      <div class="row mr-bt">
+        <% @products.each_slice(3) do |products| %>
+          <%= products[0].present? ? render(partial: 'products/index/product', locals: { product: products[0] }) : "" %>
+          <%= products[1].present? ? render(partial: 'products/index/product', locals: { product: products[1] }) : "" %>
+          <%= products[2].present? ? render(partial: 'products/index/product', locals: { product: products[2] }) : "" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="col-md-4 col-12 d-flex justify-content-center">
+    <div class="card-content__main">
+        <div class="card-content__main-img">
+            <img src="<%= url_for(product.image) %>" alt="" />
+        </div>
+        <div class="card-content__main-text">
+            <h3 class="text-position"><%= product.name %></h3>
+            <p class="text-position">
+                Ціна: <%= product.price %> $<br />
+                Бренд: <%= product.brand %><br />
+            </p>
+            <p>
+                <strong>Основні характеристики:</strong><br />
+                <% product.characteristics.each do |key, value| %>
+                    <%= key %>: <%= value %><br />
+                <% end %>
+            </p>
+
+            <%= link_to "Замовнити", product_add_to_basket_path(product.id), class: "card-buy" %>
+        </div>
+    </div>
+</div>
+    

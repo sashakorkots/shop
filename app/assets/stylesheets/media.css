@@ -1,0 +1,11 @@
+@media screen and (max-width: 768px) {
+  header .header__items,
+  .header__navigation,
+  .header__actions {
+    justify-content: center;
+  }
+  header .header__navigation,
+  header .header__actions {
+    margin-top: 30px;
+  }
+}
